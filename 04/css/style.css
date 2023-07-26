@@ -1,0 +1,44 @@
+.page_wrapper{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.containter{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 970;
+}
+
+.nav_item{
+    display: inline-block;
+}
+.nav_link.active{
+    color: black;
+}
+.nav_list{
+    text-align: center;
+    font-size: 0;
+}
+.nav_link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #828282;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 20px 25px 20px;
+    display: inline-block;
+}
+
+
+.main_nav{
+    border-bottom: 1px solid #828282;
+}
+.header{
+    margin-bottom: 50px;
+}
+.main_screen{
+    margin-top: 12px;
+}
+.site_name{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
