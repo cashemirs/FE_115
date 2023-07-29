@@ -1,0 +1,8 @@
+.list_row{
+    background-color:blueviolet;
+    padding: 5px;
+    width: 90%;
+    max-width: 600;
+    margin: 0 auto;
+    display: inline-block;
+}
