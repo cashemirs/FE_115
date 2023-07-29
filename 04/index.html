@@ -4,42 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Denis Novik</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
     <div class="page_wrapper">
-        <header class="header"> 
-            <div class="containter">
+        <header class="header">
+            <div class="container">
                 <nav class="main_nav">
                     <ul class="nav_list">
-                        <li class="nav_item"><a href="" class="nav_link">Home</a></li>
+                        <li class="nav_item"><a href="" class="nav_link">home</a></li>
                         <li class="nav_item">
-                            <a href="" class="nav_link">Skills</a>
+                            <a href="#about_me" class="nav_link">about me</a>
                         </li>
                         <li class="nav_item">
-                            <a href="" class="nav_link">Portfolio</a>
+                            <a href="#skills" class="nav_link">skills</a>
                         </li>
                         <li class="nav_item">
-                            <a href="" class="nav_link">About me</a>
+                            <a href="#portfolio" class="nav_link">portfolio</a>
                         </li>
                         <li class="nav_item">
-                            <a href="" class="nav_link">Contacts</a>
+                            <a href="#contacts" class="nav_link">contacts</a>
                         </li>
                     </ul>
-                </nav>        
+                </nav>
             </div>
         </header>
-        <section class="main_screen"> 
-            <div class="containter">
-                <h1 class="site_name">Denis Novik</h1>
-                <div class="image_wrapper">
-                    <img src="" alt="main_screen_image">
+        <main class="main">
+            <section class="main_screen">
+                <div class="container">
+                    <h1 class="site_name mb50">Denis Novik</h1>
+                    <div class="image_wrapper">
+                        <img src="./img/photox940.svg" alt="main_screen_image" style="width: 100%;">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="about_me" id="about_me">
+                <div class="container">
+                    <h2 class="site_heading mb50">About me</h2>
+                    <div class="about_content">
+                        <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected
+                            with
+                            it.</p>
+                        <p>I'm studying at courses "Web and mobile design
+                            interfaces" in IT-Academy.</p>
+                        <p>Ready to implement excellent projects
+                            with wonderful people.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="container">
+                    <h2 class="site_heading">skills</h2>
+                    <p class="site_sub_heading mb50">I work in such programs as</p>
+                    <div class="skills_content">
+                        <ul class="skills_list">
+                            <li class="skill_item">
+                                <img src="./img/Ps.svg" alt="photoshop" class="skill_img">
+                                <p class="skill_item_name">Adobe Photoshop</p>
+                                <ul class="rating">
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item"></li>
+                                    <li class="rating_item"></li>
+                                    <li class="rating_item"></li>
+                                </ul>
+                            </li>
+
+                            <li class="skill_item">
+                                <img src="./img/Ai.svg" alt="photoshop" class="skill_img">
+                                <p class="skill_item_name">Adobe Illustrator</p>
+                                <ul class="rating">
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item"></li>
+                                    <li class="rating_item"></li>
+                                </ul>
+                            </li>
+                            <li class="skill_item">
+                                <img src="./img/Ae.svg" alt="photoshop" class="skill_img">
+                                <p class="skill_item_name">Adobe After Effects</p>
+                                <ul class="rating">
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item"></li>
+                                </ul>
+                            </li>
+                            <li class="skill_item">
+                                <img src="./img/Figma.svg" alt="photoshop" class="skill_img">
+                                <p class="skill_item_name">Figma</p>
+                                <ul class="rating">
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                    <li class="rating_item active"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <div class="container">
+                    <h2 class="site_heading mb50">portfolio</h2>
+                    <div class="image_wrapper"><img src="./img/Fashion-Store.svg" alt="fashin store screenshot"></div>
+                    <div class="sample_wrapper"><a href="#" class="portfolio_sample">Online fashion store - Homepage</a>
+                    </div>
+                    <div class="image_wrapper"><img src="./img/reebok_web.svg" alt="reebok store screenshot"></div>
+                    <div class="sample_wrapper"><a href="#" class="portfolio_sample">Reebok Store - Concept</a></div>
+                    <div class="image_wrapper"><img src="./img/braun-landing.svg" alt="braun landing screenshot"></div>
+                    <div class="sample_wrapper"><a href="#" class="portfolio_sample mb0">Braun Landing Page -
+                            Concept</a></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="contacts" id="contacts">
+                <div class="container">
+                    <h2 class="site_heading">contacts</h2>
+                    <p class="site_sub_heading">Want to know more or just chat? <br>You are welcome!</p>
+                    <a href="mailto:testemail@test.com"><button type="button" class="send_message">Send message</button></a>
+                    <ul class="social_media_list">
+                        <li class="social_media_item">
+                            
+                            <a href="#"><img src="./img/linkedin.svg" alt=""></a>
+                        </li>
+                        <li class="social_media_item">
+
+                            <a href="#"><img src="./img/instagram.svg" alt=""></a>
+                        </li>
+                        <li class="social_media_item">
+                            <a href="#"><img src="./img/behance.svg" alt=""></a></a>
+                        </li>
+                        <li class="social_media_item">
+                            <a href="#"><img src="./img/dribbble.svg" alt=""></a>
+                        </li>
+                    </ul>
+                    <p class="like_request">Like me on
+                        LinkedIn, Instagram, Behance, Dribble</p>
+                </div>
+            </section>
+        </footer>
     </div>
 </body>
 
