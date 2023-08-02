@@ -4,9 +4,13 @@
 }
 
 .page_wrapper {
-    font-family: 'Gotham', 'sans-serif'
+    font-family: 'Montserrat', 'sans-serif'
 }
-
+section{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
 .container {
     max-width: 1440px;
     width: 90%;
@@ -24,7 +28,8 @@
     justify-content: space-between;
     align-items: center;
     text-transform: capitalize;
-    padding: 20px;
+    padding: 24px;
+    margin-bottom: 70px;
     font-size: 16px;
     color: #2F281E;
 }
@@ -45,7 +50,9 @@
     font-size: 22px;
     text-align: center;
 }
-
+.header .active {
+    color: #F90;
+  }
 .auth_options {
     display: flex;
     gap: 32px;
@@ -56,10 +63,17 @@
     line-height: normal;
 }
 
+.auth_button:last-child {
+    background-color: #F90;
+    color: #FFF
+}
+
 .auth_button {
-    padding: 10px;
+    box-sizing: border-box;
+    padding: 13px 25px;
     border-radius: 4px;
     border: 1px solid #BCD0E5;
+
 }
 
 .first_screen {
@@ -98,6 +112,7 @@
 }
 
 .button {
+    box-sizing: border-box;
     display: flex;
     width: 180px;
     height: 50px;
@@ -106,7 +121,7 @@
     align-items: center;
     border: 0;
     border-radius: 4px;
-    background: var(--orange, #F90);
+    background: #F90;
     text-transform: capitalize;
     color: #FFF;
     text-align: center;
@@ -114,20 +129,24 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    font-family: 'Poppins', sans-serif;
 }
 
 .features {
     width: 100%;
-    background-image: url(../img/bg.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 75px;
     margin-bottom: 100px;
 }
+main .container:nth-child(2) {
+    background-image:url(../img/bg.svg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
 
+}
 .site_heading {
     color: #2F281E;
     text-align: center;
@@ -142,19 +161,21 @@
 
 .features_list {
     display: flex;
+    width: 100%;;
+    justify-content: space-between;
     column-gap: 50px;
     align-items: center;
-    justify-content: center;
     margin-bottom: 70px;
- 
+
 }
-.feature_list_item{
+
+.feature_list_item {
     max-width: 270px;
     width: 100%;
 }
 
 .icon_wrapper {
-    color:#FFF;
+    color: #FFF;
     display: inline-flex;
     width: 50px;
     height: 50px;
@@ -162,7 +183,7 @@
     background-color: #F90;
     margin-bottom: 30px;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .feature_name {
@@ -189,6 +210,19 @@
     margin: 100px 0;
 
 }
+.container2{
+    background-image: url(../img/bg.svg);
+    background-size:  120%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.bi_right p,
+.bi_right span,
+.bi_left p,
+.bi_left span{
+    line-height: 26px;
+}
 
 .benefits_subheader_top {
     color: #544837;
@@ -204,17 +238,19 @@
     font-weight: 700;
     margin-bottom: 20px;
 }
-.check_icon_wrapper{
-    color:#FFF;
+
+.check_icon_wrapper {
+    color: #FFF;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
+    min-width: 35px;
     height: 35px;
-    background-color:#FF9900;
-    border-radius:10px;
+    background-color: #FF9900;
+    border-radius: 10px;
     margin-right: 30px;
 }
+
 .benefits_subheader_buttom {
     color: #544837;
     font-size: 16px;
@@ -233,6 +269,7 @@
 
 .benefits_content {
     display: flex;
+    align-items: center;
     color: #544837;
     font-size: 16px;
     font-weight: 500;
@@ -264,15 +301,19 @@
 }
 
 .footer_nav_section {
+    display: flex;
+    flex-direction: column;
     max-width: 280px;
+    justify-content: space-between;
 }
 
 .footer_nav_header {
     color: #2F281E;
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
+    line-height: 30px;
 }
 
 .footer_nav_list {
@@ -285,7 +326,7 @@
     font-weight: 500;
 }
 
-input[type="tel"]{
+input[type="tel"] {
     max-width: 340px;
     width: 100%;
     height: 50px;
@@ -296,7 +337,7 @@ input[type="tel"]{
 
 }
 
-input[type="tel"]::placeholder{
+input[type="tel"]::placeholder {
     color: #BCD0E5;
     font-size: 16px;
     font-style: normal;
