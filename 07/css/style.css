@@ -145,6 +145,7 @@ main .container:nth-child(2) {
     background-size:contain;
     background-repeat:no-repeat;
     background-position:bottom;
+    position: relative;
 
 }
 .site_heading {
@@ -344,3 +345,13 @@ input[type="tel"]::placeholder {
     font-weight: 400;
     line-height: normal;
 }
+main .container:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 5%, rgba(255,255,255,0) 95%, rgba(255,255,255,1) 100%);  }
+  
+ 
