@@ -1,28 +1,86 @@
-.main-header {
-    position: relative;
-    background-image: url("../../07/img/bg.svg") ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    margin: 0 auto;
-    width: 90%;
-    height: 1000px;
-    overflow: hidden;
-  }
-  
-  .main-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 1) 5%, /* Прозрачность на левом краю (0%) */
-        rgba(255, 255, 255, 0) 15%, /* Прозрачность на 45% от правого края */
-        rgba(255, 255, 255, 0) 85%, /* Прозрачность на 55% от правого края */
-        rgba(255, 255, 255, 1) 95% /* Прозрачность на правом краю (100%) */
-      );
-      z-index: -1;
-  }
+
+.page_wrapper{
+  font-family: 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color:white;
+}
+.container{
+  max-width: 1440px;
+  background-color: #3399CC;
+  border: 25px solid #2B81AC;
+  margin: 0 auto;
+}
+.w-100{
+  width: calc(100% - 4px);
+}
+.w-50 {
+  width: calc(50% - 4px);
+}
+.w-25 {
+  width: calc(25% - 4px);
+}
+.city_list {
+  width: 100%;
+  max-width: 1170px;
+  background-color: #fff;
+  font-size: 0;
+  margin: 0 auto;
+  box-sizing:border-box;
+}
+.city_list_item{
+    display: inline-block;
+    height: 147px;
+    text-align: center;
+    font-size: 22px;
+    margin: 2px;
+    padding: 26px 0 27px 0;
+    box-sizing:border-box;
+}
+.city_list_item span{
+  display: block;
+}
+.city_list_item:nth-of-type(1) {
+  background-color: #3399CC;
+}
+.city_list_item:nth-of-type(2) {
+  background-color: #33CCCC;
+}
+.city_list_item:nth-of-type(3) {
+  background-color: #996699;
+}
+.city_list_item:nth-of-type(4) {
+  background-color: #C24747;
+}
+.city_list_item:nth-of-type(5) {
+  background-color: #E2674A;
+}
+.city_list_item:nth-of-type(6) {
+  background-color: #FFCC66;
+}
+.city_list_item:nth-of-type(7) {
+  background-color: #99CC99;
+}
+.city_list_item:nth-of-type(8){
+  background-color: #669999;
+}
+.city_list_item:nth-of-type(9){
+  background-color: #CC6699;
+}
+.city_list_item:nth-of-type(10) {
+  background-color: #339966;
+}
+.city_list_item:nth-of-type(11) {
+  background-color: #666699;
+}
+.city_weather i{
+  font-size: 42px;
+  margin-left: 4px;
+}
+.city_weather{
+  box-sizing:border-box;
+  margin-top: 19px;
+  opacity: .7;
+}

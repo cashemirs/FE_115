@@ -33,6 +33,9 @@ section{
     padding: 24px;
     font-size: 16px;
     color: #2F281E;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .navigation_list {
@@ -42,17 +45,12 @@ section{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    color: #2F281E;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 28px;
 }
 main{
     padding-top: 150px;
 }
 .navigation_list a {
-    font-size: 22px;
     text-align: center;
 }
 .header .active {
@@ -91,7 +89,7 @@ main{
     z-index: 2;
   }
   .header .container {
-    position: relative; /* Добавьте позиционирование для .container внутри .header */
+    position: relative; 
   }
   
 .first_screen {
