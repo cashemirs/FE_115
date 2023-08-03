@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            background-color: lightblue
+        }
+
+        label,
+        button {
+            display: block;
+            margin: 5px;
+
+        }
+
+        form {
+            padding: 10px;
+            
+        }
+
+        .page_wrapper {
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <header class="header">
+
+        </header>
+        <main class="main">
+            <div class="container">
+                <h1 style="margin: 10px;">Sign up form</h1>
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST" target="_blank">
+                    <label for="full_name">Повне ім'я</label>
+                    <input type="text" id="full_name" name="full_name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm_password">Пароль ще раз</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+
+                    <label for="age">Вік</label>
+                    <input type="number" name="age" id="age" maxlength="2" minlength="1" max="99" min="1">
+
+                    <label for="sex-male">Стать
+                        <label for="sex-male">
+                            <input type="radio" name="sex" id="sex-male" value="male" required>
+                            Чоловіча
+                        </label>
+                        <label for="sex-female" required>
+                            <input type="radio" name="sex" id="sex-female" value="female" required>
+                            Жіноча
+                        </label>
+                    </label>
+                    
+                    <label for="courses">Курс:</label>
+                    <select name="courses" id="courses" required>
+                        <option value="" selected hidden>Choose</option>
+                        <option value="frontend">frontend</option>
+                        <option value="backend">backend</option>
+                        <option value="project_management">project management</option>
+                        <option value="qa_manual">qa manual</option>
+                    </select>
+                    
+                    <label for="full_address">Повна адреса:</label>
+                    <textarea name="full_address" id="full_address" cols="auto" rows="auto"></textarea>
+                    
+                    <label for="agreement">
+                        <input type="checkbox" id="agreement" required>
+                        Я погоджуюсь з обробкою персональних даних
+                    </label>
+
+                    <button type="reset" id="reset">Очистити форму</button>
+                    <button type="submit">Зареєструватись</button>
+                </form>
+            </div>
+            <div class="container">
+                <h2 style="margin: 10px;">Inputs</h2>
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_blank" enctype="multipart/form-data">
+                    
+                    <label for="color">Оберіть колір авто:</label>
+                    <input type="color" name="color" id="color" >
+
+                    
+                    <label for="datetime">Date of registratopn</label>
+                    <input type="datetime-local" name="datetime" id="datetime" min="2000-01-01T00:00">
+
+                    <label for="pasport" >Pasport:</label>
+                    <input type="file" id="pasport" name="pasport" required>
+                    
+                    <label for="price">Price:</label>
+                    <input type="range" name="price" id="price" min="0" max="999999">
+                    
+                    
+                    <label for="url">Any links:</label>
+                    <input type="url" name="url" id="url" pattern="https?://.+">
+
+                    <button type="submit">Submit</button>
+                </form>
+                     
+            </div>
+        </main>
+       
+    </div>
+</body>
+
+</html>

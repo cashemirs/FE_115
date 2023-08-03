@@ -1,0 +1,28 @@
+.main-header {
+    position: relative;
+    background-image: url("../../07/img/bg.svg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0 auto;
+    width: 90%;
+    height: 1000px;
+    overflow: hidden;
+  }
+  
+  .main-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 5%, /* Прозрачность на левом краю (0%) */
+        rgba(255, 255, 255, 0) 15%, /* Прозрачность на 45% от правого края */
+        rgba(255, 255, 255, 0) 85%, /* Прозрачность на 55% от правого края */
+        rgba(255, 255, 255, 1) 95% /* Прозрачность на правом краю (100%) */
+      );
+      z-index: -1;
+  }
