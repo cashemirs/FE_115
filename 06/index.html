@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewspanort" content="width=device-width, initial-scale=1.0">
-    <link href="httspans://fonts.cdnfonts.com/css/lucida-sans" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/lucida-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Weather</title>
@@ -15,62 +13,64 @@
     <div class="page_wrapper">
         <main>
             <div class="container">
+                <h1 class="site_header">CSS Weather Forecast </h1>
+                <i class="wi wi-sunrise subheader_icon"></i>
                 <ul class="city_list">
                     <li class="city_list_item w-50">
                       <span class="city">lisbon</span>
-                      <span class="city_weather">21°C <i class="fa-solid fa-sun"></i></span>
-                      
+                      <span class="city_weather">21°C <i class="wi wi-day-sunny"></i></span>
                     </li>
                     <li class="city_list_item w-25">
                       <span class="city">paris</span>
-                      <span class="city_weather">11°C <i class="fa-solid fa-cloud-moon-rain"></i></span>
+                      <span class="city_weather">11°C <i class="wi wi-night-sleet"></i></span>
                       
                     </li>
                     <li class="city_list_item w-25">
                       <span class="city">belgrad</span>
-                      <span class="city_weather">15°C <i class="fa-solid fa-cloud-moon"></i></span>
+                      <span class="city_weather">15°C <i class="wi wi-day-cloudy"></i></span>
                       
                     </li>
                     <li class="city_list_item w-25">
                       <span class="city">venice</span>
-                      <span class="city_weather">21°C <i class="fa-solid fa-meteor"></i></span>
+                      <span class="city_weather">21°C <i class="wi wi-day-cloudy-high"></i></span>
                     </li>
                     <li class="city_list_item w-25">
                       <span class="city">tel-aviv</span>
-                      <span class="city_weather">32°C<i class="fa-solid fa-temperature-high"></i></span>
+                      <span class="city_weather">32°C<i class="wi wi-hot"></i></span>
                       
                     </li>
                     <li class="city_list_item w-25">
                       <span class="city">cair</span>
-                      <span class="city_weather">21°C <i class="fa-solid fa-cloud-showers-water"></i></span>
+                      <span class="city_weather">21°C <i class="wi wi-day-sunny"></i></span>
                       
                     </li>
                     <li class="city_list_item w-25">
                       <span class="city">new-york</span>
-                      <span class="city_weather">17°C<i class="fa-solid fa-cloud-bolt"></i></span>
+                      <span class="city_weather">17°C<i class="wi wi-day-sleet-storm"></i></span>
                       
                     </li>
                     <li class="city_list_item w-25">
                       <span class="city">new-delhi</span>
-                      <span class="city_weather">17°C <i class="fa-solid fa-umbrella"></i></i></span>
+                      <span class="city_weather">17°C <i class="wi wi-rain-wind"></i></i></span>
                       
                     </li>
                     <li class="city_list_item w-50">
                       <span class="city">san-francisco</span>
-                      <span class="city_weather">15°C <i class="fa-solid fa-cloud-moon"></i></span>
+                      <span class="city_weather">15°C <i class="wi wi-day-cloudy"></i></span>
                       
                     </li>
                     <li class="city_list_item w-25 ">
                       <span class="city">tokio</span>
-                      <span class="city_weather">8°C <i class="fa-solid fa-cloud-meatball"></i></span>
+                      <span class="city_weather">8°C <i class="wi wi-day-sunny"></i></span>
                       
                     </li>
                     <li class="city_list_item w-100 ">
                       <span class="city">sydney</span>
-                      <span class="city_weather">25°C <i class="fa-solid fa-cannabis"></i></span>
+                      <span class="city_weather">25°C <i class="wi wi-night-cloudy"></i></span>
                       
                     </li>
                 </ul>
+                <p class="site_subtext">Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
             </div>
         </main>
     </div>
