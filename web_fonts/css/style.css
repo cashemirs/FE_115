@@ -1,0 +1,97 @@
+.page_wrapper {
+    font-family: 'PT Sans';
+    color: #000;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 48px
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.locale {
+    font-family: 'Tourney';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.32px;
+}
+
+.path {
+    display: flex;
+    font-family: 'Staatliches';
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.66px;
+}
+
+.path_item:not(:last-child):after {
+    content: "/";
+    margin-left: 10px;
+    margin-right: px;
+    color: #000;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 70px 0 90px;
+}
+
+.header {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.main_logo {
+    margin-left: auto;
+    box-sizing: border-box;
+    max-height: 54px;
+}
+
+.site_header {
+    color: #000;
+    font-family: 'Francois One';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.section_heading {
+    position: relative;
+}
+
+.site_subheader {
+    color: #000;
+    font-family: 'Farro';
+    font-size: .55em;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    position: absolute;
+    max-height: 40%;
+    top: -15px;
+}
+
+.background {
+    background-color: rgb(207, 207, 207);
+}

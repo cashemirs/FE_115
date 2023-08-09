@@ -113,12 +113,11 @@ background-color:#fff;
 }
 
 .skill_item {
-    height: 230px;
-    width: 170px;
+    max-width: 170px;
+    width: 100%;
     display: inline-block;
     text-align: center;
     margin-right: 96px;
-    vertical-align: top;
 }
 
 .skill_item:last-child {
