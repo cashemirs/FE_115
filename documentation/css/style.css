@@ -206,3 +206,9 @@ background: var(--logos-black-bg, #1A1A1A);
     margin-right: 20px;
     margin-bottom: 8px;
 }
+ .bg_image{
+    background-image:url(../img/bg-picture.svg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:right 0px top 150px;
+ } 
