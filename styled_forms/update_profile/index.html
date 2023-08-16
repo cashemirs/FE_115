@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="page_wrapper">
+    <div class="container">
+
+        <header class="header">
+            <h2 class="section_header">Profile</h2>
+        </header>
+        <main class="main">
+            <section class="update_profile">
+                <form action="#">
+                    <div class="input_wrapper w100">
+                        <div class="userpic_wrapper">
+                            <img src="../img/crop_img_placeholder.png" alt="" class="userpic">
+                        </div>
+                        <div class="form_group">
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required/>
+                        <label for="avatar" class="avatar_uploader">
+                            <span class="success_message">Uploaded</span>
+                            <span class="icon_wrapper"><i class="fa-solid fa-camera"></i></span>
+                        </label>
+                        <button type="reset" for="avatar"><span class="icon_wrapper"><i class="fa-solid fa-trash"></i></span></button>
+                        <p class="subtext">Up to 1 MB (300x300 px)</p>
+                        </div>
+                        
+                    </div>
+                    <div class="input_wrapper w50 mt20 mr10">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" maxlength=20 required>
+                    </div>
+
+                    <div class="input_wrapper w50 mt20">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="input_wrapper w50 mt20 mr10" >
+                        <label for="country_selector">Country</label>
+                        <select name="country_selector" class="country_selector" id="country_selector" required>
+                            <option value="" selected hidden >Select</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="poland">Poland</option>
+                        </select>
+                        <span class="icon_wrapper"><i class="fa-solid fa-sort"></i></span>
+                    </div>
+
+                    <div class="input_wrapper w50">
+                        <label for="city_selector">City</label>
+                        <select id="city_selector" name="city_selector" class="city_selector" required>
+                            <option value="" selected hidden></option>
+                            <optgroup label="USA">
+                                <option value="newyork">New-York</option>
+                                <option value="losangeles">Los-Angeles</option>
+                                <option value="chicago">Chicago</option>
+                            </optgroup>
+                            <optgroup label="Canada">
+                                <option value="toronto">Toronto</option>
+                                <option value="vancouver">Vancouver</option>
+                                <option value="ottawa">Ottawa</option>
+                            </optgroup>
+                            <optgroup label="Ukraine">
+                                <option value="kiyev">Kiyev</option>
+                                <option value="zaporizhya">Zaporizhya</option>
+                                <option value="dnipro">Dnipro</option>
+                                <option value="uzhgorod">Uzhgorod</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input_wrapper w50 mt20 mr10">
+                        <label for="zip_code">Zip Code</label>
+                        <input type="number" inputmode="numeric" pattern="[0-9]*" name="zip_code" maxlength=6 accept="Number" required>
+                    </div>
+
+                    <div class="input_wrapper w50 mt20">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required >
+                    </div>
+                    <div class="button_wrapper mt20">
+                        <button type="submit">Update</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+
+</html>
