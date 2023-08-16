@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <div class="container">
+         
+            <header class="header">
+                <h2 class="section_header">Create an Account</h2>
+            </header>
+
+            <main class="main">
+                <section class="account_creation">
+                    <form id="profileForm" action="" valid>
+                        <div class="input_wrapper w50 mr10 mt20">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" maxlength=20 required>
+                        </div>
+
+                        <div class="input_wrapper w50">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" required maxlength=20>
+                        </div>
+                        <div class="input_wrapper w100 mt20">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" required>
+                            <p class="email_subtext">We'll never share your email with anyone else.</p>
+                        </div>
+                        <div class="input_wrapper w100 mt20">
+                            <label for="sex-male" class="radio_label">
+                                <input type="radio" name="sex" id="sex-male" value="male" required checked>
+                                <span class="custom_radio"></span>
+                                <span class="radio_lable_content">Male</span>
+                            </label>
+
+                            <label for="sex-female" class="radio_label">
+                                <input type="radio" name="sex" id="sex-female" value="female" required>
+                                <span class="custom_radio"></span>
+                                <span class="radio_lable_content">Female</span>
+                            </label>
+
+                        </div>
+                        <div class="input_wrapper w50 mr10 mt20">
+                            <label for="country_selector">Country</label>
+                            <select name="country_selector" class="country_selector" id="country_selector" required>
+                                <option value="" hidden>Select</option>
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                                <option value="ukraine">Ukraine</option>
+                                <option value="poland">Poland</option>
+                            </select>
+                            <span class="icon_wrapper"><i class="fa-solid fa-sort"></i></span>
+                        </div>
+                        <div class="input_wrapper w50">
+                            <label for="city_selector">City</label>
+                            <select id="city_selector" name="city_selector" class="city_selector" required>
+                                <option value="" selected hidden></option>
+                                <optgroup label="USA">
+                                    <option value="newyork">New-York</option>
+                                    <option value="losangeles">Los-Angeles</option>
+                                    <option value="chicago">Chicago</option>
+                                </optgroup>
+                                <optgroup label="Canada">
+                                    <option value="toronto">Toronto</option>
+                                    <option value="vancouver">Vancouver</option>
+                                    <option value="ottawa">Ottawa</option>
+                                </optgroup>
+                                <optgroup label="Ukraine">
+                                    <option value="kiyev">Kiyev</option>
+                                    <option value="zaporizhya">Zaporizhya</option>
+                                    <option value="dnipro">Dnipro</option>
+                                    <option value="uzhgorod">Uzhgorod</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="input_wrapper w100 mt20">
+                        <button type="submit" formaction="./update_profile/">Sign Up</button>
+                        </div>
+                    </form>
+                    <p class="subtext">By clicking the 'Sign Up' button, you confirm that you accept our <a
+                            href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+                </section>
+                <footer class="footer">
+                    <p class="navigation_login mt20"><span>Have an account?</span><a href="#">Log In</a></p>
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
