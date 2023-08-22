@@ -10,34 +10,43 @@
 
 .header {
     border: 1px solid #EFEEF3;
+    padding: 22.5px 0;
+    width: 100%;
+
 }
-footer{
-    background-color:#16133D;
+
+footer {
+    background-color: #16133D;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-.heading>.page_header {
-    margin-top: 15px;
-    color: var(--6, #16133D);
-    font-family: Nunito Sans;
+
+.page_header {
+    color: #16133D;
+    font-family: "Nunito Sans";
     font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 52px;
-    /* 130% */
     letter-spacing: 0.2px;
 }
-.mt40{
+
+.mt40 {
     margin-top: 40px;
 }
-.mt30{
+
+.mt30 {
     margin-top: 30px;
 }
-.mt15{
+
+.mt15 {
     margin-top: 15px;
 }
+
 .service_list {
     display: flex;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .service_wrapper {
@@ -60,33 +69,123 @@ footer{
 
 .icon {
     display: inline-block;
-    width: 100%;
-    height: 36px;
 }
-.service_wrapper:hover{
+
+.service_wrapper:hover {
     border: 1px solid #3DB370;
-    cursor: pointer;
-    --Vector: #e1f4f5;
-    --Vector_2: #caeff2;
-    --Vector_3: #f4feff;
-    --Vector_4: #52c29d;
+    --p1: #E1F4F5;
+    --p2: #CAEFF2;
+    --p3: #CAEFF2;
+    --p5: #52C29D;
 
 }
-.service_wrapper:hover .icon{
-    --Vector: #e1f4f5;
-    --Vector_2: #caeff2;
-    --Vector_3: #f4feff;
-    --Vector_4: #52c29d;
-}
-.megaphone-icon{
+
+.megaphone-icon {
     height: 36px;
     width: 40px;
 }
-.building-icon{
+
+.building-icon {
     height: 36px;
     width: 40px;
 }
-.phone-icon{
+
+.phone-icon {
     height: 36px;
     width: 25px;
 }
+
+.main-logo {
+    width: 33px;
+    height: 32px
+}
+
+.social_links_icon_wrapper {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: #EFEEF3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.twitter-icon {
+    width: 20px;
+    height: 17px;
+}
+
+.facebook-icon {
+    width: 10px;
+    height: 19px;
+}
+
+.dribbble-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.github-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.instagram-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.social_links {
+    display: flex;
+    gap: 10px;
+}
+
+.social_links li:hover {
+    --socialist_default: #3DB370;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 40px 0;
+}
+
+.logo_subtext {
+    color: #16133D;
+    font-family: "Quicksand";
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+
+.sub_header {
+    color: #7690A8;
+}
+
+.card_header {
+    color: #16133D;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21.28px;
+    letter-spacing: 0.2px;
+}
+
+.service_overview {
+    color: #16133D;
+    line-height: 28px;
+}
+
+.learn_more_link {
+    color: #3DB370;
+    font-weight: 600;
+}
+.white{
+    color: #fff;
+}
+@media (max-width: 1299px) {
+    .main{
+        padding-bottom: 200px;
+    }
+  }
