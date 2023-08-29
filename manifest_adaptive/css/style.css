@@ -278,7 +278,6 @@ section {
 .contacts {
     display: inline-block;
     padding-bottom: 40px;
-    text-align: center;
 }
 
 .footer_header {
@@ -363,7 +362,6 @@ section {
     .search_option{
         position: absolute;
         right: 40px;
-        top: 30%;
     }
     
     .post_content:last-child{
@@ -372,6 +370,7 @@ section {
     .contacts {
         max-width: 100%;
         padding: 0;
+        text-align: center;
     }
     .header{
         height: 5vh;
