@@ -24,12 +24,15 @@
     align-items: center;
 
 }
+
 .view_all_option>.icon_wrapper {
     margin-left: 20px;
 }
+
 .achievement p>.icon_wrapper {
     display: block;
 }
+
 .navigation_list {
     display: flex;
     font-size: 14px;
@@ -58,7 +61,7 @@
 .hero {
     width: 100%;
     height: 90vh;
-    background-image: url(../img/initial_bg_image.jpg);
+    background: url(../img/initial_bg_image.jpg) lightgray 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -68,7 +71,6 @@
 
 .image_wrapper {
     font-size: 0;
-
 }
 
 .section_header {
@@ -125,12 +127,13 @@
     justify-content: center;
     gap: 30px;
 }
-.reverse{
+
+.reverse {
     flex-direction: row-reverse;
 }
 
 .grid_item:nth-child(2)>.content_wrapper:nth-child(2) {
-     align-items: flex-end;
+    align-items: flex-end;
 }
 
 .blog_content_header {
@@ -340,53 +343,39 @@ section {
     letter-spacing: 1.2px;
 }
 
-.burger_lable{
+.burger_lable {
     padding: 7px;
     cursor: pointer;
     display: none;
 }
-.burger:checked + .burger {
+
+.burger:checked+.burger {
     display: block;
 }
+
 @media (max-width: 415px) {
-    .hero{
+    .hero {
         margin-bottom: 70px;
         height: 95vh;
     }
+
     .main>.container {
         gap: 70px;
     }
+
     .haeder>.container {
         position: relative;
     }
-    .search_option{
+
+    .search_option {
         position: absolute;
         right: 40px;
     }
-    
-    .post_content:last-child{
+
+    .post_content:last-child {
         display: block;
     }
-    .contacts {
-        max-width: 100%;
-        padding: 0;
-        text-align: center;
-    }
-    .header{
-        height: 5vh;
-    }
-    .footer {
-       padding: 50px 0
-    }
-    .footer>.container {
-        flex-direction: column;
-        gap: 40px;
-    }
 
-    .allrights_label {
-        font-size: 16px;
-        text-align: center;
-    }
 
     .info {
         flex-direction: column;
@@ -410,24 +399,27 @@ section {
     .items_2 li {
         width: 100%;
     }
-
     .items_3 li {
         width: 100%;
     }
-    .grid_item{
+
+    .grid_item {
         flex-direction: column-reverse;
     }
-    .grid_item>.content_wrapper{
+
+    .grid_item >.content_wrapper {
         width: 100%;
     }
-    .blog>.section_heading{
+
+    .blog>.section_heading {
         justify-content: center;
     }
   
-   
+
 }
-@media (max-width: 860px){
-    .navigation_list{
+
+@media (min-width: 416px) and (max-width: 860px) {
+    .navigation_list {
         display: flex;
         height: 100%;
         width: 100%;
@@ -437,26 +429,83 @@ section {
         left: 100vh;
         right: 0;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         z-index: 50;
         padding-top: 100px;
-        background-color:#f4f4f4;
+        background-color: #f4f4f4;
     }
-    .burger_lable{
+
+    .burger_lable {
         display: inline-block;
     }
-    .navigation{
+
+    .navigation {
         gap: 20px;
     }
-    .burger:checked + .navigation_list {
-      
+
+    .burger:checked+.navigation_list {
+
         left: 0;
-        
+
     }
-    .burger:checked ~ .burger_lable {
+    .burger:checked ~ .search_option{
+        display: none;
+    }
+    .burger:checked~.burger_lable {
         position: fixed;
         right: 10px;
         z-index: 999;
         right: 2%;
     }
+
+    .items_3 li {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 50px 0
+    }
+
+    .footer>.container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .allrights_label {
+        font-size: 16px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .contacts {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .items_3 li  a {
+        display: flex;
+        justify-content: space-between;
+    }
+    .items_3 li:nth-child(2) a{
+        flex-direction: row-reverse;
+    }
+    ul.posts_list.items_3 li a > div {
+        display: flex;
+        width: calc(50% - 20px);
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .posts_subheading{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .info div {
+        max-width: 100%;
+        }
+        .achievement_description p{
+            text-align: end;
+        }
 }
