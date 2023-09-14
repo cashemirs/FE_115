@@ -7,7 +7,7 @@ function greating() {
   if (name) {
     greating_text.innerHTML = "Hi , " + name + "! Welcome!";
   } else {
-    greating_text.innerHTML = "Enter your name plz";
+    greating_text.innerHTML = "Enter your valid name";
   }
 }
 
@@ -18,9 +18,9 @@ function age_calculation() {
   var age_result = currentYear - parseInt(birth_date);
 
   if (age_result && birth_date >= 1900 && birth_date <= currentYear) {
-    age.innerHTML = "Тут навіть церква не допоможе, " + age_result + "...";
+    age.innerHTML = "your age  " + age_result + "...";
   } else {
-    age.innerHTML = "Введіть валідну дату нарождення";
+    age.innerHTML = "enter a valid birth date";
   }
 }
 
@@ -52,7 +52,7 @@ function speed_calculation() {
   speed = distance / time;
 
   if (speed && distance >= 0 && time >= 0) {
-    speed_result.innerHTML = "You have to move by " + speed + " km per hour";
+    speed_result.innerHTML = "You have to move by " + speed.toFixed(2) + " km per hour";
   } else {
     speed_result.innerHTML = "Enter a valid values";
   }
