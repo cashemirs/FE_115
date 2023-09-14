@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+</head>
+
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
+    <label for="name_input">Enter your name here:</label>
+    <input type="text" id="name_input" maxlength="10">
+    <button onclick="greating()">Submit</button>
+    <p id="greating_text"></p>
+
+    <label for="birth_input">Enter your birth date :</label>
+    <input type="number" id="birth_input">
+    <button onclick="age_calculation()">Submit</button>
+    <p id="age"></p>
+
+    <label for="square_input">Enter length of the side of the square:</label>
+    <input type="number" id="square_input">
+    <button onclick="square_calculation()">Submit</button>
+    <p id="square_result"></p>
+
+    <label for="radius_input">Enter radius length:</label>
+    <input type="number" id="radius_input">
+    <button onclick="square_circle_calculation()">Submit</button>
+    <p id="square_circle_result"></p>
+
+    <label for="distance_input">Enter distance here(use km):</label>
+    <input type="number" id="distance_input">
+    <label for="time_input">Enter time that u have for travelling here(use hours):</label>
+    <input type="number" id="time_input">
+    <button onclick="speed_calculation()">Submit</button>
+    <p id="speed_result"></p>
+
+    <label for="dollars_input">Enter amount of dollars u have(plz do not submit negative values):</label>
+    <input type="number" id="dollars_input">
+    <button onclick="exchange_rate_calculation()">Submit</button>
+    <p id="exchange_rate_result"></p>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
