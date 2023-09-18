@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
-<body>
+<body style="display: flex; align-items:center; gap: 10px; flex-direction: column;">
+    <div class="first_two">
     <button type="button" onclick="calc()">GET 0.3 result</button>
     <button type="button" onclick="sum()">GET 3 result</button>
-    
-    <input type="text" id="flash_size">
-    <button type="button" onclick="calculateFiles()">files</button>
+    </div>
 
-    <input type="text" id="choco_price">
-    <input type="text" id="money_amount">
-
+    <div class="flash_files_size">
+    <input type="text" id="flash_size" placeholder="flash size in gb">
+    <button type="button" onclick="calculateFiles()">get files amount</button>
+    </div>
+    <div class="choco_calculation">
+    <input type="text" id="choco_price" placeholder="price">
+    <input type="text" id="money_amount" placeholder="money amount">
     <button type="button" onclick="calculateChocolates()">Choco</button>
+    </div>
 
-    <input type="text" id="user_number">
+    <div class="numbers_reverser">
+    <input type="text" id="user_number" placeholder="any number">
     <button type="button" onclick="reverse_number()">reverse</button>
+    </div>
 
+    <div class="percent_calculation">
     <input type="text" id="period" placeholder="period">
     <input type="text" id="initial_money" placeholder="initial_money">
-
     <button type="button" onclick="bank_calc()">bank_calc</button>
+    </div>
 
     <script src="./js/main.js"></script>
 
