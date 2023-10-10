@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,21 @@
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
+    <link rel="stylesheet" rel="preconnect" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css">
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="page_wrapper">
-        
+
         <main class="main">
             <section class="hero">
                 <div class="container">
@@ -28,34 +34,39 @@
                         <p class="hero_subheader">Safe Travel Anywhere</p>
                     </div>
                     <form action="" class="search_form">
-                        <label for="search_option" class="search_option_label">
-                            <input type="text" class="search_option" id="search_option">
-                            <button type="submit" class="search_submit" ></button>
-                        </label>
+                        <div class="form_group">
+                            <input type="text" placeholder=" " class="search_option" id="search_option">
+                            <label for="search_option" class="search_option_label">Search Your Travel
+                                Destination</label>
+                            <button type="submit" class="search_submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i>Search</button>
+                        </div>
+
                     </form>
                 </div>
             </section>
             <nav class="navigation">
                 <div class="container">
                     <a href="#" class="header_logo">Bhromaon</a>
-                    <ul class="header_navigation">
+                    <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+                    <ul class="header_navigation" id="menu">
                         <li class="navigation_item"><a href="#">Who We Are</a></li>
                         <li class="navigation_item"><a href="#">What We Do</a></li>
                         <li class="navigation_item"><a href="#">Travel With Us</a></li>
                         <li class="navigation_item"><a href="#">Contact Us</a></li>
                     </ul>
-                    </div>
+                </div>
             </nav>
             <section class="why_we">
                 <div class="container">
                     <div class="content_wrapper">
                         <h2 class="section_header">Why Choose Us</h2>
                         <p class="content_text">Tion and dislike men who are so beguiled and demoralized
-                             by desire by the charms of pleasure of the moment, so blinded by desire,
-                              that they cannot foresee</p>
-                        <p class="content_text">Ddislike men who are so beguiled and demoralized 
-                            by the charms of pleasure of the moment, so blinded by desire, that.</p>  
-                        <a href="#" class="book_button">Explore Places</a>    
+                            by desire by the charms of pleasure of the moment, so blinded by desire,
+                            that they cannot foresee</p>
+                        <p class="content_text">Ddislike men who are so beguiled and demoralized
+                            by the charms of pleasure of the moment, so blinded by desire, that.</p>
+                        <a href="#" class="book_button">Explore Places</a>
                     </div>
                     <div class="content_wrapper">
                         <div class="image_wrapper">
@@ -69,6 +80,11 @@
             </section>
             <section class="instruction">
                 <div class="container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="874" height="92" viewBox="0 0 874 92" fill="none">
+                        <path opacity="0.502"
+                            d="M1 91C1 91 217.014 -110.278 442.118 91C442.118 91 639.939 -111.5 873 91" stroke="white"
+                            stroke-linecap="round" stroke-dasharray="2 5" />
+                    </svg>
                     <ul class="instruction_list">
                         <li class="instruction_item">
                             <div class="icon_wrapper">
@@ -102,7 +118,9 @@
                     <div class="country_content">
                         <span class="content_subtext">Spain</span>
                         <h3 class="content_header">Grand Spain Madrid</h3>
-                        <p class="content_text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+                        <p class="content_text">But I must explain to you how all this mistaken idea of account to
+                            denouncing pleasure and praising pain was account born and I account will give you a
+                            complete account of the system</p>
                         <a href="#" class="book_button">book now</a>
                     </div>
                 </div>
@@ -112,23 +130,29 @@
                     <div class="country_content">
                         <span class="content_subtext">Spain</span>
                         <h3 class="content_header">Grand Spain Madrid</h3>
-                        <p class="content_text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+                        <p class="content_text">But I must explain to you how all this mistaken idea of account to
+                            denouncing pleasure and praising pain was account born and I account will give you a
+                            complete account of the system</p>
                         <a href="#" class="book_button">book now</a>
                     </div>
                 </div>
             </section>
             <section class="feedbacks">
                 <div class="container">
-                    <h2 class="section_header">What Our  Tourists Say</h2>
+                    <h2 class="section_header">What Our Tourists Say</h2>
                     <div class="feedback_wrapper">
                         <div class="image_wrapper">
-                            <img src="./img/feedbacks_photo.jpg" alt="">
+                            
                         </div>
                         <div class="content_wrapper">
                             <h3 class="content_header">Sam Sumon</h3>
-                            <p class="content_text"><span class="icon_wrapper"><i class="fa-solid fa-quote-left"></i></span> But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  
-                                But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born 
-                                and I account will give you a complete account of the system was account  born and I account will give you a nai the complete 
+                            <p class="content_text"><span class="icon_wrapper"><i
+                                        class="fa-solid fa-quote-left"></i></span> But I must explain to you how all
+                                this mistaken idea of account to denouncinpleasure and praising pain
+                                But I must explain to you how all this mistaken idea of account to nai denouncing
+                                pleasure and praising pain was account born
+                                and I account will give you a complete account of the system was account born and I
+                                account will give you a nai the complete
                                 account of the system</p>
                         </div>
                     </div>
@@ -136,8 +160,22 @@
             </section>
         </main>
         <footer class="footer">
-
+                <div class="container">
+                    <div class="footer-headers">
+                        <h3 class="footer-main_header">Bhromaon</h3>
+                        <p class="footer-main_subheader">Safe Travel Anywhere</p>
+                    </div>
+                    <ul class="social_links">
+                        <li class="list_item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></i></li>
+                        <li class="list_item"><a href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
+                        <li class="list_item"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="list_item"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="list_item"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
         </footer>
     </div>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
